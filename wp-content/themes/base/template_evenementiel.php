@@ -11,7 +11,7 @@
                 <?php $blockevenementiel = get_field("block_evenementiel");
                 for ($i=0; $i < count($blockevenementiel); $i++){
                     echo'<div class="row imgevenementiel justify-content-center align-items-center"><img class="img-fluid imgtest" src="'.$blockevenementiel[$i]["img_evenementiel"].'" alt=""><h3 class="titreevenementiel">'.$blockevenementiel[$i]["titre_evenementiel"].'</h3></div>
-                    <p>'.$blockevenementiel[$i]["texte_evenementiel"].'</p>';
+                    <p class="textevenementiel text-center">'.$blockevenementiel[$i]["texte_evenementiel"].'</p>';
                     } 
                 ?>
 </div>

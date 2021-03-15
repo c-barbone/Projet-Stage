@@ -8,7 +8,7 @@
             <h2 class="titrepage">Communication</h2>
         </div>
         <div class="col-12 colcom">
-            <h3 class="titresecondaire text-center">Réseaux sociaux</h3>
+            <h3 class="titresecondaire1 text-center">Réseaux sociaux</h3>
             <p class="paragraphecom text-center mx-5">Vous n'êtes pas adeptes des stories, likes & autres retweets ? 
                 Pas d'inquiétude, nous vous proposons plusieurs formules adaptées à vos besoins pour 
                 la gestion de votre présence sur les médias sociaux. Facebook, Instagram, Linkedin, 

@@ -22,7 +22,7 @@
       <div class="row blockinfos1">
           <?php $blockinfos1 = get_field("block_infos1");
             for ($i=0; $i < count($blockinfos1); $i++){
-              echo '<div class="col-lg-6 col-sm-12 pt-3 text-center"><img class="logoblock1" src="'.$blockinfos1[$i]["logo_infos1"].'" alt="...">
+              echo '<div class="col-lg-6 col-sm-12 pt-3 text-center"><img class="logoblock" src="'.$blockinfos1[$i]["img_infos1"].'" alt="...">
               <h3 class="titreinfos1">'.$blockinfos1[$i]["titre_infos1"].'</h3>
               <p class="textinfos1">'.$blockinfos1[$i]["texte_infos1"].'</p></div>';
             }
