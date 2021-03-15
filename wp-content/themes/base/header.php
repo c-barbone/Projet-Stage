@@ -29,12 +29,12 @@
   <link rel="stylesheet" href="<?= get_stylesheet_uri()?>">
 
   <!-- Logo tab navigation -->
-  <link rel="icon" type="image/png" href="http://localhost/wordpress/wp-content/uploads/2021/02/DdpLogo.png" />
+  <link rel="icon" type="image/png" href="" />
 </head>
 
 <body>
   <div class="container-fluid containerglobal">
-    <div class="fixed-top">
+    <div class="">
       <nav class="navbar navbar-expand-lg d-flex justify-content-center">
         <button class="navbar-toggler" type="button" data-toggle="collapse" 
           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
@@ -61,7 +61,7 @@
             <div class="col-1 d-flex justify-content-center">
               <a class="navbar-brand" href="#"><?= the_custom_logo(); ?></a>
             </div>
-        <ul class="col-6">
+        <ul class="col">
           <?php
             wp_nav_menu( array(
             'container' =>'nav',

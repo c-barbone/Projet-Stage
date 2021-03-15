@@ -14,18 +14,6 @@
                     <p class="text-center paragraphecrea">'.$blockcreav[$i]["texte_crea_vis"].'</p></div></div>';
                     } 
                 ?>
-            <div class="col-lg-6 col-sm-12">
-                
-            </div>
-            <div class="col-lg-6 col-sm-12">
-
-            </div>
-            <div class="col-lg-6 col-sm-12">
-
-            </div>
-            <div class="col-lg-6 col-sm-12">
-
-            </div>
     </div>
   
 <?php get_footer(); ?>

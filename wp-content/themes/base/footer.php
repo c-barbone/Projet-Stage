@@ -8,7 +8,7 @@
 								Pix'ailes
 							</div>
 						</div>
-						<a href="" class="col-6 d-flex justify-content-end Mentionsfooter">
+						<a href="http://localhost/ProjetStage/mentions-legales/" class="col-6 d-flex justify-content-end Mentionsfooter">
 							Mentions légales
 						</a>
 					</div>

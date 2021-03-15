@@ -46,10 +46,16 @@ Theme Name: Template de base
 .titrepage{
     font-family: 'Heaters';
     font-size: 130px;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 200px;
 }
 
+@media screen and (max-width:414px) {
+	.titrepage{
+		font-size: 62px;
+        margin-bottom: 100px;
+	}
+}
 /************************************ End Title *********************************/
 /*---------------------------------------------------------------------------------------------------*/
 
@@ -59,7 +65,6 @@ Theme Name: Template de base
 
 .navbar {
 	background-color: #DA291C;
-	width: 100vw;
     height: 120px;
 	color: white;
     font-family: 'stewart_sansnormal';
@@ -273,6 +278,52 @@ span{
     
 
 /****************************** End Page évènementiel ***************************/
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/******************************* Page Mentions Légales ***************************/
+/*********************************************************************************/
+
+.containerMentions{
+    border: dotted 2px #DA291C;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.rowinfoM{
+    margin-bottom: 50px;
+}
+
+.spanmentions{
+    font-weight: bold;
+}
+
+.titremention{
+    font-family: 'Heaters';
+    font-size: 50px;
+}
+
+.colmention{
+    font-family: 'stewart_sansnormal';
+    font-size: 20px;
+    padding: 0;
+}
+
+.paragraphementions{
+    font-family: 'stewart_sansnormal';
+    font-size: 20px;
+}
+
+@media screen and (max-width:414px) {
+	.containerMentions{
+		border: none;
+        margin-bottom: 100px;
+	}
+    .titremention{
+        font-size: 40px;
+    }
+}
+/**************************** End Page Mentions Légales *************************/
 /*---------------------------------------------------------------------------------------------------*/
 
 
