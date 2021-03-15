@@ -1,16 +1,19 @@
-<footer id="footer">
-	<div class="newsletter">
-		<form>
-			<input type="text" placeholder="Sign up ou newsletter">
-			<input type="submit" value="envoyer">
-	</form>
-	</div>
-	<div class="social">
-		<a href="/" target="blank"><img src="ds" /></a>
-		<a href="/" target="blank"><img src="sdf" /></a>
-	</div>
-</footer>
-</div>
-<?php wp_footer(); ?>
-</body>
+			<footer id="footer">
+				<div class="container-fluid containerfoot mt-5">
+				</div>
+				<div class="container-fluid test">
+					<div class="row h-100 align-items-end">
+						<div class="col-6">
+							<div class="">
+								Pix'ailes
+							</div>
+						</div>
+						<a href="" class="col-6 d-flex justify-content-end Mentionsfooter">
+							Mentions légales
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>

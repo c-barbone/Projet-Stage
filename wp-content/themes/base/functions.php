@@ -1,7 +1,8 @@
 <?php 
 
 // on créé une zone pour le menu 
-register_nav_menu( 'menuheader', 'Menu du Header' );
+register_nav_menu( 'menuheader1', 'Menu du Header' );
+register_nav_menu( 'menuheader2', 'Menu du Header' );
 register_nav_menu( 'menufooter', 'Menu du Footer' );
 
 
@@ -39,3 +40,14 @@ add_action( 'widgets_init', 'header_widgets_init' );
 //‘after_widget’ = fermer la balise (</div>, </li> etc…)
 //‘before_title’ = choisir une balise pour le titre du widget (<h2>, <h3>, <h4> etc…) et, comme pour le ‘before_widget’, ajoutez une classe pour agir en CSS ultérieurement
 //‘after_title’ = fermer la balise du titre (</h2>, </h3>, </h4> etc…)
+
+
+//================================== Add Logo ===========================================
+
+function wpc_theme_support() {
+	add_theme_support('custom-logo', array(
+		'flex-height' => true,
+		'flex-width'  => true,
+	));
+}
+add_action('after_setup_theme','wpc_theme_support');
