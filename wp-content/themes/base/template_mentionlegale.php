@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
     <div class="container-fluid">
-        <div class="col-12 d-flex justify-content-center">
+        <div class="row justify-content-center">
             <?php
                 $titrementions = get_field("titre_mentions");
                 echo '<h2 class="titrepage">'.$titrementions.'</h2>'

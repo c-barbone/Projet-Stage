@@ -50,12 +50,31 @@ Theme Name: Template de base
     margin-bottom: 100px;
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:667px) {
 	.titrepage{
-		font-size: 62px;
-        margin-bottom: 100px;
+		font-size: 100px;
 	}
 }
+
+@media screen and (max-width:540px) {
+	.titrepage{
+		font-size: 80px;
+	}
+}
+
+@media screen and (max-width:414px) {
+	.titrepage{
+		font-size: 60px;
+	}
+}
+@media screen and (max-width:280px) {
+	.titrepage{
+		font-size: 50px;
+	}
+}
+
+
+
 /************************************ End Title *********************************/
 /*---------------------------------------------------------------------------------------------------*/
 
@@ -151,8 +170,11 @@ Theme Name: Template de base
 }
 
 @media screen and (max-width:414px) {
-	
+	.titreslider{
+        font-size: 50px;
+    }
 }
+
 
 /************************************* End Home **********************************/
 /*---------------------------------------------------------------------------------------------------*/
@@ -162,9 +184,47 @@ Theme Name: Template de base
 /******************************** Page site internet ******************************/
 /**********************************************************************************/
 
+.colsite1{
+    
+}
+.colsite2{
+    
+}
+
+.titrepsite{
+    font-family: 'Heaters';
+    font-size: 130px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
 .titresite{
-    
+    font-family: 'Heaters';
+    font-size: 50px;
+    line-height: 0.9em;
+    margin-bottom: 20px;
+}
+
+.logochrono1{
+    margin-bottom: 30px;
+}
+
+.logochrono2{
+    margin-bottom: 30px;
+}
+
+.textsite1{
+    font-family: 'stewart_sansnormal';
+    font-size: 20px;
+    margin-bottom: 100px;
+    line-height: 1.2em;
+}
+
+.textsite2{
+    font-family: 'stewart_sansnormal';
+    font-size: 20px;
+    margin-bottom: 100px;
+    line-height: 1.2em;
 }
 
 .traitvertical{
@@ -307,6 +367,26 @@ Theme Name: Template de base
 		display: none;
 	}
 }
+
+@media screen and (max-width:414px) {
+	.titreslider{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:280px) {
+	.titresite{
+        font-size: 40px;
+    }
+    .textsite1{
+        font-size: 18px;
+    }
+    .textsite2{
+        font-size: 18px;
+    }
+}
+
+
 /****************************** End Page site internet ****************************/
 /*---------------------------------------------------------------------------------------------------*/
 
@@ -321,14 +401,26 @@ Theme Name: Template de base
 
 .paragraphecrea{
     font-family: 'stewart_sansnormal';
-    font-size: 20px;
+    font-size: 25px;
     margin: 20px;
    
 }
 
-.testcol:nth-child(odd){
+.rowcréa{
+    margin-bottom: 100px;
+}
+
+.rowcréa:nth-child(odd){
     flex-direction: row-reverse;
 }
+
+@media screen and (max-width:280px) {
+	.titrecrea{
+		font-size: 50px;
+	}
+}
+
+
 /****************************** End Page créa visuelles ****************************/
 /*---------------------------------------------------------------------------------------------------*/
 
@@ -376,6 +468,37 @@ Theme Name: Template de base
 span{
     color: #DA291C;
 }
+
+@media screen and (max-width:667px) {
+	.titrepagecom{
+		font-size: 100px;
+	}
+    .titresecondaire{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:540px) {
+	.titrepagecom{
+		font-size: 80px;
+	}
+}
+
+@media screen and (max-width:414px) {
+	.titrepagecom{
+		font-size: 60px;
+	}
+}
+@media screen and (max-width:280px) {
+	.titrepagecom{
+		font-size: 50px;
+	}
+    .titresecondaire{
+        font-size: 40px;
+    }
+}
+
+
 /****************************** End Page communication ***************************/
 /*---------------------------------------------------------------------------------------------------*/
 

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Advanced Custom Fields - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-01-18 23:35:03+0000\n"
+"PO-Revision-Date: 2021-03-13 14:28:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,196 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - Advanced Custom Fields - Stable (latest release)\n"
+
+#: includes/fields/class-acf-field-email.php:167
+msgid "'%s' is not a valid email address"
+msgstr "« %s » n’est pas une adresse e-mail valide"
+
+#: includes/fields/class-acf-field-color_picker.php:69
+msgid "Color value"
+msgstr "Valeur de la couleur"
+
+#: includes/fields/class-acf-field-color_picker.php:67
+msgid "Select default color"
+msgstr "Sélectionner la couleur par défaut"
+
+#: includes/fields/class-acf-field-color_picker.php:65
+msgid "Clear color"
+msgstr "Effacer la couleur"
+
+#: includes/acf-wp-functions.php:87
+msgid "Blocks"
+msgstr "Blocs"
+
+#: includes/acf-wp-functions.php:83
+msgid "Options"
+msgstr "Options"
+
+#: includes/acf-wp-functions.php:79
+msgid "Users"
+msgstr "Utilisateurs/utilisatrices"
+
+#: includes/acf-wp-functions.php:75
+msgid "Menu items"
+msgstr "Éléments de menu"
+
+#: includes/acf-wp-functions.php:67
+msgid "Widgets"
+msgstr "Widgets"
+
+#: includes/acf-wp-functions.php:59
+msgid "Attachments"
+msgstr "Fichiers joints"
+
+#: includes/acf-wp-functions.php:54
+msgid "Taxonomies"
+msgstr "Taxonomies"
+
+#: includes/acf-wp-functions.php:41
+msgid "Posts"
+msgstr "Publications"
+
+#: includes/ajax/class-acf-ajax-local-json-diff.php:66
+msgid "JSON field group (newer)"
+msgstr "Groupe de champs JSON (plus récent)"
+
+#: includes/ajax/class-acf-ajax-local-json-diff.php:62
+msgid "Original field group"
+msgstr "Groupe de champ original"
+
+#: includes/ajax/class-acf-ajax-local-json-diff.php:57
+msgid "Last updated: %s"
+msgstr "Dernière mise à jour : %s"
+
+#: includes/ajax/class-acf-ajax-local-json-diff.php:51
+msgid "Sorry, this field group is unavailable for diff comparison."
+msgstr "Désolé, ce groupe de champ n’est pas disponible pour la comparaison de différence."
+
+#: includes/ajax/class-acf-ajax-local-json-diff.php:41
+msgid "Invalid field group ID."
+msgstr "ID de groupe de champs non valide."
+
+#: includes/ajax/class-acf-ajax-local-json-diff.php:34
+msgid "Invalid field group parameter(s)."
+msgstr "Paramètres de groupe de champ non valides."
+
+#: includes/admin/admin-field-groups.php:480
+msgid "Awaiting save"
+msgstr "En attente d’enregistrement"
+
+#: includes/admin/admin-field-groups.php:477
+msgid "Saved"
+msgstr "Enregistré"
+
+#: includes/admin/admin-field-groups.php:473
+msgid "Import"
+msgstr "Importer"
+
+#: includes/admin/admin-field-groups.php:469
+msgid "Review changes"
+msgstr "Évaluer les modifications"
+
+#: includes/admin/admin-field-groups.php:445
+msgid "Located in: %s"
+msgstr "Situés dans : %s"
+
+#: includes/admin/admin-field-groups.php:441
+msgid "Located in plugin: %s"
+msgstr "Situés dans l’extension : %s"
+
+#: includes/admin/admin-field-groups.php:437
+msgid "Located in theme: %s"
+msgstr "Situés dans le thème : %s"
+
+#: includes/admin/admin-field-groups.php:415
+msgid "Various"
+msgstr "Divers"
+
+#: includes/admin/admin-field-groups.php:195
+#: includes/admin/admin-field-groups.php:529
+msgid "Sync changes"
+msgstr "Synchroniser les modifications"
+
+#: includes/admin/admin-field-groups.php:194
+msgid "Loading diff"
+msgstr "Diff de chargement"
+
+#: includes/admin/admin-field-groups.php:193
+msgid "Review local JSON changes"
+msgstr "Évaluer les modifications JSON locales"
+
+#: includes/admin/admin.php:171
+msgid "Visit website"
+msgstr "Visiter le site"
+
+#: includes/admin/admin.php:170
+msgid "View details"
+msgstr "Voir les détails"
+
+#: includes/admin/admin.php:169
+msgid "Version %s"
+msgstr "Version %s"
+
+#: includes/admin/admin.php:168
+msgid "Information"
+msgstr "Information"
+
+#: includes/admin/admin.php:159
+msgid "<a href=\"%s\" target=\"_blank\">Help Desk</a>. The support professionals on our Help Desk will assist with your more in depth, technical challenges."
+msgstr "<a href=\"%s\" target=\"_blank\">Service d’assistance</a>. Les professionnels du support de notre service d’assistance vous aideront à résoudre vos problèmes techniques les plus complexes."
+
+#: includes/admin/admin.php:155
+msgid "<a href=\"%s\" target=\"_blank\">Discussions</a>. We have an active and friendly community on our Community Forums who may be able to help you figure out the ‘how-tos’ of the ACF world."
+msgstr "<a href=\"%s\" target=\"_blank\">Discussions</a>. Nous avons une communauté active et amicale sur nos forums communautaires qui peut vous aider à comprendre le « Comment faire » du monde d’ACF."
+
+#: includes/admin/admin.php:151
+msgid "<a href=\"%s\" target=\"_blank\">Documentation</a>. Our extensive documentation contains references and guides for most situations you may encounter."
+msgstr "<a href=\"%s\" target=\"_blank\">Documentation</a>. Notre documentation complète contient des références et des guides pour la plupart des situations que vous pouvez rencontrer."
+
+#: includes/admin/admin.php:148
+msgid "We are fanatical about support, and want you to get the best out of your website with ACF. If you run into any difficulties, there are several places you can find help:"
+msgstr "Nous sommes fanatiques du support et souhaitons que vous tiriez le meilleur parti de votre site avec ACF. Si vous rencontrez des difficultés, il existe plusieurs endroits où vous pouvez trouver de l’aide :"
+
+#: includes/admin/admin.php:145 includes/admin/admin.php:147
+msgid "Help & Support"
+msgstr "Aide & support"
+
+#: includes/admin/admin.php:136
+msgid "Please use the Help & Support tab to get in touch should you find yourself requiring assistance."
+msgstr "Veuillez utiliser l’onglet « Aide & support » pour nous contacter si vous avez besoin d’assistance."
+
+#: includes/admin/admin.php:133
+msgid "Before creating your first Field Group, we recommend first reading our <a href=\"%s\" target=\"_blank\">Getting started</a> guide to familiarize yourself with the plugin's philosophy and best practises."
+msgstr "Avant de créer votre premier groupe de champ, nous vous recommandons de lire notre guide <a href=\"%s\" target=\"_blank\">Pour commencer</a> afin de vous familiariser avec la philosophie et les meilleures pratiques de l’extension."
+
+#: includes/admin/admin.php:131
+msgid "The Advanced Custom Fields plugin provides a visual form builder to customize WordPress edit screens with extra fields, and an intuitive API to display custom field values in any theme template file."
+msgstr "L’extension Advanced Custom Fields fournit un constructeur visuel de formulaires pour modifier les écrans de WordPress avec des champs supplémentaires, ainsi qu’une API intuitive pour afficher les valeurs des champs personnalisés dans n’importe quel fichier de modèle de thème."
+
+#: includes/admin/admin.php:128 includes/admin/admin.php:130
+msgid "Overview"
+msgstr "Aperçu"
+
+#: includes/locations.php:34
+msgid "Location type \"%s\" is already registered."
+msgstr "Le type d’emplacement « %s » est déjà enregistré."
+
+#: includes/locations.php:23
+msgid "Class \"%s\" does not exist."
+msgstr "La classe « %s » n’existe pas."
+
+#: acf.php:424 includes/admin/admin-field-groups.php:226
+msgctxt "post status"
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: includes/ajax/class-acf-ajax.php:155
+msgid "Invalid nonce."
+msgstr "Nonce non valide."
+
+#: includes/fields/class-acf-field-user.php:334
+msgid "Error loading field."
+msgstr "Erreur de chargement du champ."
 
 #: includes/forms/form-user.php:336
 msgid "<strong>ERROR</strong>: %s"
@@ -192,7 +382,7 @@ msgstr "Galerie"
 
 #: includes/admin/views/html-notice-upgrade.php:9
 msgid "Flexible Content"
-msgstr "Contenu Flexible."
+msgstr "Contenu flexible"
 
 #: includes/admin/views/html-notice-upgrade.php:8
 msgid "Repeater"
@@ -273,7 +463,7 @@ msgstr "Affiché dans la liste de groupes de champs"
 
 #: includes/admin/views/field-group-options.php:86
 msgid "Field groups with a lower order will appear first"
-msgstr "Les groupes de champs avec le plus petit ordre apparaîtra en premier."
+msgstr "Les groupes de champs avec le plus petit ordre apparaîtra en premier"
 
 #: includes/admin/views/field-group-options.php:85
 msgid "Order No."
@@ -382,7 +572,7 @@ msgstr "Type de champ"
 
 #: includes/admin/views/field-group-field.php:76
 msgid "Single word, no spaces. Underscores and dashes allowed"
-msgstr "Un seul mot. Aucun espace. Les tirets bas et les tirets sont autorisés."
+msgstr "Mot unique, aucun espace. Tirets bas et tirets autorisés"
 
 #: includes/admin/views/field-group-field.php:75
 msgid "Field Name"
@@ -559,7 +749,7 @@ msgstr[1] "%s groupes de champs importés"
 
 #: includes/admin/tools/class-acf-admin-tool-import.php:107
 msgid "Import file empty"
-msgstr "Le fichier à importer est vide."
+msgstr "Fichier d’importation vide"
 
 #: includes/admin/tools/class-acf-admin-tool-import.php:98
 msgid "Incorrect file type"
@@ -567,7 +757,7 @@ msgstr "Type de fichier incorrect"
 
 #: includes/admin/tools/class-acf-admin-tool-import.php:93
 msgid "Error uploading file. Please try again"
-msgstr "Échec de l'importation du fichier. Veuillez essayer à nouveau."
+msgstr "Erreur de téléversement du fichier. Veuillez réessayer."
 
 #: includes/admin/tools/class-acf-admin-tool-import.php:62
 msgid "Import File"
@@ -943,6 +1133,10 @@ msgstr "Le type de fichier doit être %s."
 msgid "or"
 msgstr "ou"
 
+#: includes/api/api-helpers.php:3620
+msgid "File size must not exceed %s."
+msgstr "La taille du fichier ne doit pas excéder %s."
+
 #: includes/api/api-helpers.php:3615
 msgid "File size must be at least %s."
 msgstr "La taille du fichier doit être d'au moins %s."
@@ -1254,7 +1448,7 @@ msgstr "Spécifiez la valeur retournée"
 
 #: includes/fields/class-acf-field-select.php:412
 msgid "Use AJAX to lazy load choices?"
-msgstr "Utiliser AJAX pour charger les choix au défilement"
+msgstr "Utiliser AJAX pour charger les choix de défilement ?"
 
 #: includes/fields/class-acf-field-checkbox.php:381
 #: includes/fields/class-acf-field-select.php:374
@@ -1846,7 +2040,7 @@ msgstr "Sélectionner un type de publication"
 #: includes/fields/class-acf-field-relationship.php:64
 #: assets/js/acf-input.js:3322
 msgid "No matches found"
-msgstr "Aucune correspondance trouvée."
+msgstr "Aucune correspondance trouvée"
 
 #: includes/fields/class-acf-field-relationship.php:63
 #: assets/js/acf-input.js:3302
@@ -2217,7 +2411,7 @@ msgstr "Centrer"
 
 #: includes/fields/class-acf-field-google-map.php:151
 msgid "Search for address..."
-msgstr "Rechercher une adresse"
+msgstr "Rechercher une adresse…"
 
 #: includes/fields/class-acf-field-google-map.php:148
 msgid "Find current location"
@@ -2282,6 +2476,12 @@ msgstr "Afficher le format"
 #: includes/fields/class-acf-field-time_picker.php:25
 msgid "Time Picker"
 msgstr "Sélecteur d’heure"
+
+#: acf.php:429
+msgid "Disabled <span class=\"count\">(%s)</span>"
+msgid_plural "Disabled <span class=\"count\">(%s)</span>"
+msgstr[0] "<span class=\"count\">(%s)</span> désactivé"
+msgstr[1] "<span class=\"count\">(%s)</span> désactivés"
 
 #: includes/admin/admin-field-group.php:392
 msgid "Inactive"
