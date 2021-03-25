@@ -581,14 +581,6 @@ class WPCF7_ContactForm {
 			'<ul>%s</ul>',
 			implode( "\n", $validation_errors )
 		);
-
-		$output = sprintf(
-			'<div class="screen-reader-response">%1$s %2$s</div>',
-			$primary_response,
-			$validation_errors
-		);
-
-		return $output;
 	}
 
 	public function validation_error( $name ) {

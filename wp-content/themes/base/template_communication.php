@@ -1,6 +1,6 @@
-<?php /* Template Name: page Communication */ ?>
+<?php /* Template Name: page Communication */ 
 
-<?php get_header(); ?>
+  get_header(); ?>
 
 <div class="container-fluid">
     <div class="row">
@@ -17,6 +17,7 @@
                 }
                 ?>
     </div>
+    <div class="row commargin"></div>
 </div>
 
 <?php get_footer(); ?>

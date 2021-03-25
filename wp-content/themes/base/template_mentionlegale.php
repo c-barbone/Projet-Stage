@@ -10,11 +10,11 @@
             ?>
         </div>
         <div class="container containerMentions">
-            <div class="row ml-2 rowinfoM">
+            <div class="ml-2 rowinfoM">
                 <?php $pagementions = get_field("blockinfo_mentions");
                     for ($i=0; $i < count($pagementions); $i++){
-                        echo'<div class="col-12 colmention">'.$pagementions[$i]["titre_infosmentions"].' '
-                        .$pagementions[$i]["details_infosmentions"].'</div>';
+                        echo'<div class="row colmention">'.$pagementions[$i]["titre_infosmentions"].'
+                        <p class="detailsmentions">'.$pagementions[$i]["details_infosmentions"].'</p></div>';
                         } 
                 ?>
             </div>

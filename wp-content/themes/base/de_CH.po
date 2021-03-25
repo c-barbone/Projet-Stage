@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Template de base\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-25 15:03+0000\n"
+"PO-Revision-Date: 2021-03-25 15:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: German (Switzerland)\n"
+"Language: de_CH\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7\n"
+"X-Domain: Templatedebase"
+
+#. Author of the theme
+msgid "Anonyme"
+msgstr ""
+
+#. Name of the template
+msgid "contact"
+msgstr ""
+
+#. Name of the template
+msgid "page Communication"
+msgstr ""
+
+#. Name of the template
+msgid "page Créations visuelles"
+msgstr ""
+
+#. Name of the template
+msgid "page Evènementiel"
+msgstr ""
+
+#. Name of the template
+msgid "page Mention Légales"
+msgstr ""
+
+#. Name of the template
+msgid "page realisation"
+msgstr ""
+
+#. Name of the template
+msgid "Site internet"
+msgstr ""
+
+#. Name of the template
+msgid "Slider Revolution Blank Template child"
+msgstr ""
+
+#. Name of the theme
+msgid "Template de base"
+msgstr ""

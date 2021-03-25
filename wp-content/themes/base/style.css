@@ -100,15 +100,36 @@ Theme Name: Template de base
     text-decoration: none;
   }
 
-  nav.menu-menu-principal2-container>li>a{
-    color: white;
-    padding-right: 80px;
-  }
-
   nav.menu-menu-principal1-container>li>a{
     color: white;
-    padding-left: 80px;
   }
+  
+  nav.menu-menu-principal2-container>li>a{
+    width: 100% !important;
+    color: white;
+    margin-right: 30px;
+  }
+
+  /***** Multilingue *****/
+  nav.menu-main-menuone-container>li>a{
+    color: white;
+  }
+
+  nav.menu-main-menutwo-container>li>a{
+    width: 100% !important;
+    color: white;
+    margin-right: 30px;
+  }
+  nav.menu-hauptmenu-eins-container>li>a{
+    color: white;
+  }
+
+  nav.menu-hauptmenu-zwei-container>li>a{
+    width: 100% !important;
+    color: white;
+    margin-right: 30px;
+  }
+/***** Fin Multilingue *****/
 
 /************************************ End Navbar **********************************/
 /*---------------------------------------------------------------------------------------------------*/
@@ -169,6 +190,11 @@ Theme Name: Template de base
     font-size: 70px;
 }
 
+.colslider{
+    height: 400px;
+    margin-bottom: 200px;
+}
+
 @media screen and (max-width:414px) {
 	.titreslider{
         font-size: 50px;
@@ -183,13 +209,6 @@ Theme Name: Template de base
 
 /******************************** Page site internet ******************************/
 /**********************************************************************************/
-
-.colsite1{
-    
-}
-.colsite2{
-    
-}
 
 .titrepsite{
     font-family: 'Heaters';
@@ -227,11 +246,42 @@ Theme Name: Template de base
     line-height: 1.2em;
 }
 
+.colsite1{
+    margin-top: 6%;
+}
+.colsite2{
+    margin-top: -4%;
+}
+
 .traitvertical{
         border-left: 2px solid #DA291C;
-        height: 1200px;
+        height: 1250px;
         position: relative;
         left: 15%;
+}
+
+.traitvertical::before{
+    content:"";
+    position: absolute;
+    background: #da291c;
+    opacity: 40%;
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+    margin-top: -2%;
+    margin-left: -27px;
+}
+
+.traitvertical::after{
+    content:"";
+    position: absolute;
+    background: #da291c;
+    opacity: 26%;
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+    margin-top: 1239px;
+    margin-left: -27px;
 }
 
 .trait1{
@@ -249,6 +299,19 @@ Theme Name: Template de base
     width: 200px;
     margin-top: 3px;
 }
+
+.trait1::after{
+    content:"";
+    position: absolute;
+    background: #da291c;
+    opacity: 26%;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-top: -5%;
+    margin-left: 95%; 
+}
+
 .trait2{
     border-top: 2px solid #DA291C;
     position: absolute;
@@ -265,12 +328,24 @@ Theme Name: Template de base
     margin-top: 3px;
 }
 
+.trait2::after{
+    content:"";
+    position: absolute;
+    background: #da291c;
+    opacity: 40%;
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+    margin-top: -5%;
+    margin-left: -5%;
+}
+
 .trait3{
     border-top: 2px solid #DA291C;
     position: absolute;
     width: 200px;
     margin-left: -10%;
-    top:30%;
+    top:31%;
 }
 
 .trait3::before{
@@ -281,12 +356,24 @@ Theme Name: Template de base
     margin-top: 3px;
 }
 
+.trait3::after{
+    content:"";
+    position: absolute;
+    background: #da291c;
+    opacity: 28%;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    margin-top: -4%;
+    margin-left: 95%;
+}
+
 .trait4{
     border-top: 2px solid #DA291C;
     position: absolute;
     width: 200px;
     margin-left: -35%;
-    top:43%;
+    top:44%;
 }
 
 .trait4::before{
@@ -297,12 +384,24 @@ Theme Name: Template de base
     margin-top: 3px;
 }
 
+.trait4::after{
+    content:"";
+    position: absolute;
+    background: #da291c;
+    opacity: 40%;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    margin-top: -4%;
+    margin-left: -4%;
+}
+
 .trait5{
     border-top: 2px solid #DA291C;
     position: absolute;
     width: 200px;
     margin-left: -10%;
-    top:57%;
+    top:56%;
 }
 
 .trait5::before{
@@ -313,12 +412,24 @@ Theme Name: Template de base
     margin-top: 3px;
 }
 
+.trait5::after{
+    content:"";
+    position: absolute;
+    background: #da291c;
+    opacity: 40%;
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+    margin-top: -5%;
+    margin-left: 94%;
+}
+
 .trait6{
     border-top: 2px solid #DA291C;
     position: absolute;
     width: 200px;
     margin-left: -35%;
-    top:70%;
+    top:69%;
 }
 
 .trait6::before{
@@ -329,12 +440,24 @@ Theme Name: Template de base
     margin-top: 3px;
 }
  
+.trait6::after{
+    content:"";
+    position: absolute;
+    background: #da291c;
+    opacity: 26%;
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+    margin-top: -5%;
+    margin-left: -5%;
+}
+
 .trait7{
     border-top: 2px solid #DA291C;
     position: absolute;
     width: 200px;
     margin-left: -10%;
-    top:83%;
+    top:82%;
 }
 
 .trait7::before{
@@ -343,6 +466,18 @@ Theme Name: Template de base
     position: absolute;
     width: 200px;
     margin-top: 3px;
+}
+
+.trait7::after{
+    content:"";
+    position: absolute;
+    background: #da291c;
+    opacity: 40%;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    margin-top: -4%;
+    margin-left: 95%;
 }
 
 .trait8{
@@ -361,6 +496,110 @@ Theme Name: Template de base
     margin-top: 3px;
 }
 
+.trait8::after{
+    content:"";
+    position: absolute;
+    background: #da291c;
+    opacity: 40%;
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+    margin-top: -5%;
+    margin-left: -5%;
+}
+
+.sitemargin{
+    margin-bottom: 110px;
+}
+
+@media screen and (width:1024px) {
+    .textsite1{
+        margin-bottom: 90px;
+    }
+    
+    .textsite2{
+        margin-bottom: 70px;
+    }
+
+    .colsite1{
+        margin-top: 6%;
+    }
+    .colsite2{
+        margin-top: -7%;
+    }
+    
+    .traitvertical{
+		height: 1310px;
+	}
+    
+    .trait1{
+        border-top: 2px solid #DA291C;
+        position: absolute;
+        width: 200px;
+        margin-left: -18%;
+        top:5%;
+    }
+    
+    .trait2{
+        border-top: 2px solid #DA291C;
+        position: absolute;
+        width: 200px;
+        margin-left: -50%;
+        top:16%;
+    }
+    
+    .trait3{
+        border-top: 2px solid #DA291C;
+        position: absolute;
+        width: 200px;
+        margin-left: -18%;
+        top:31%;
+    }
+    
+    .trait4{
+        border-top: 2px solid #DA291C;
+        position: absolute;
+        width: 200px;
+        margin-left: -50%;
+        top:41%;
+    }
+    
+    .trait5{
+        border-top: 2px solid #DA291C;
+        position: absolute;
+        width: 200px;
+        margin-left: -18%;
+        top:56%;
+    }
+    
+    .trait6{
+        border-top: 2px solid #DA291C;
+        position: absolute;
+        width: 200px;
+        margin-left: -50%;
+        top:68%;
+    }
+    
+    .trait7{
+        border-top: 2px solid #DA291C;
+        position: absolute;
+        width: 200px;
+        margin-left: -18%;
+        top:83%;
+    }
+ 
+    .trait8{
+        border-top: 2px solid #DA291C;
+        position: absolute;
+        width: 200px;
+        margin-left: -50%;
+        top:95%;
+    }
+
+    .traitvertical::after{
+        margin-top: 1298px;
+    }
+}
 
 @media screen and (max-width:823px) {
 	.traitvertical{
@@ -368,15 +607,33 @@ Theme Name: Template de base
 	}
 }
 
+@media screen and (max-width:667px) {
+	.titrepsite{
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width:540px) {
+	.titrepsite{
+        font-size: 80px;
+    }
+}
+
 @media screen and (max-width:414px) {
-	.titreslider{
-        font-size: 50px;
+    .titrepsite{
+        font-size: 60px;
+    }
+    .titresite{
+        font-size: 40px;
     }
 }
 
 @media screen and (max-width:280px) {
-	.titresite{
-        font-size: 40px;
+	.titrepsite{
+        font-size: 50px;
+    }
+    .titresite{
+        font-size: 35px;
     }
     .textsite1{
         font-size: 18px;
@@ -385,7 +642,6 @@ Theme Name: Template de base
         font-size: 18px;
     }
 }
-
 
 /****************************** End Page site internet ****************************/
 /*---------------------------------------------------------------------------------------------------*/
@@ -414,10 +670,24 @@ Theme Name: Template de base
     flex-direction: row-reverse;
 }
 
+.creamargin{
+    margin-bottom: 100px;
+}
+
+@media (min-width:768px) and (max-width:1366px) {
+    .paragraphecrea{
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width:280px) {
 	.titrecrea{
 		font-size: 50px;
 	}
+    .paragraphecrea{
+        margin-left: 5px;
+        margin-right: 0;
+    }
 }
 
 
@@ -469,6 +739,16 @@ span{
     color: #DA291C;
 }
 
+.commargin{
+    margin-bottom: 200px;
+}
+
+@media (min-width:768px) and (max-width:1366px) {
+    .paragraphecom{
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width:667px) {
 	.titrepagecom{
 		font-size: 100px;
@@ -496,6 +776,10 @@ span{
     .titresecondaire{
         font-size: 40px;
     }
+    .paragraphecom{
+        margin-left: 5px !important;
+        margin-right: 0 !important;
+    }
 }
 
 
@@ -505,10 +789,6 @@ span{
 
 /******************************** Page évènementiel ******************************/
 /*********************************************************************************/
-
-.titrepageEv:hover{
-    color: #DA291C;
-}
 
 .titreevenementiel{
     font-family: 'Heaters';
@@ -531,9 +811,214 @@ span{
     margin-bottom: 200px;
 }
 
-    
+@media (min-width:768px) and (max-width:1366px) {
+    .textevenementiel{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:667px) {
+	.titreevenementiel{
+        font-size: 90px;
+    }
+    .textevenementiel{
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .titreevenementiel{
+        font-size: 60px;
+    }
+    .textevenementiel{
+        margin-bottom: 100px;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width:320px) {
+	.titreevenementiel{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .titreevenementiel{
+        font-size: 45px;
+    }
+	.textevenementiel{
+        margin: 25px 0px 100px;
+    }
+}
 
 /****************************** End Page évènementiel ***************************/
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/*********************************** Page Contact ********************************/
+/*********************************************************************************/
+
+.textcontact{
+    font-family: 'stewart_sansnormal';
+    font-size: 30px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.titrefooter{
+    font-family: 'Heaters';
+    font-size: 100px;
+    -webkit-transform: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+    transform: skewY(2deg);
+}
+
+.titreaddress{
+    font-family: 'Heaters';
+    font-size: 70px;
+    color: white;
+}
+
+.textaddress{
+    font-family: 'stewart_sansnormal';
+    font-size: 30px;
+    color: white;
+}
+
+.textaddress>a{
+    color: white;
+    text-decoration: none;
+}
+
+.textaddress>a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.rowcolor{
+    background-color: #DA291C;
+    height: 350px;
+    width: 100%;
+    -webkit-transform: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+    transform: skewY(2deg);
+    position: absolute;
+}
+
+.test{
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'stewart_sansnormal';
+    font-size: 30px;
+    color: #DA291C;
+    margin-bottom: 30px;
+}
+
+.test:focus{
+    outline-style: none;
+}
+
+input.wpcf7-form-control.wpcf7-file{
+    outline-style: none;
+}
+
+.wpcf7{
+    width: 90%;
+}
+
+input.wpcf7-form-control.test{
+    width: 60%;
+}
+
+input.wpcf7-form-control.test::placeholder{
+    color: black;
+}
+
+textarea.wpcf7-form-control.wpcf7-textarea.test{
+    width: 60%;
+}
+textarea.wpcf7-form-control.wpcf7-textarea.test::placeholder{
+    color: black;
+}
+
+.fichiercontact{
+    border: 1px dotted black;
+    margin-bottom: 70px;
+    padding: 40px;
+}
+
+span.wpcf7-not-valid-tip{
+    color: #DA291C;
+    position: absolute;
+}
+
+.wpcf7-response-output{
+    color: #DA291C;
+}
+
+.contactmargin{
+    margin-bottom: 200px;
+}
+
+@media screen and (max-width:823px) {
+	.titrefooter{
+        font-size: 56px;
+    }
+    .textcontact{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:414px) {
+	.titrefooter{
+        font-size: 39px;
+    }
+    .titreaddress{
+        font-size: 60px;
+    }
+    .textaddress{
+        font-size: 20px;
+    }
+    .rowcolor{
+        height: 280px;
+    }
+    .wpcf7{
+        width: 100%;
+    }
+    input.wpcf7-form-control.test{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:360px) {
+	.titrefooter{
+        font-size: 37px;
+    }
+}
+@media screen and (max-width:320px) {
+	.titrefooter{
+        font-size: 28px;
+    }
+    .titreaddress{
+        font-size: 50px;
+    }
+    .rowcolor{
+        height: 270px;
+    }
+    .textcontact{
+        font-size: 18px;
+    }
+}
+
+
+/********************************** End Page contact ********************************/
 /*---------------------------------------------------------------------------------------------------*/
 
 
@@ -554,6 +1039,11 @@ span{
     font-weight: bold;
 }
 
+.detailsmentions{
+    margin-bottom: 0;
+    font-size:20px;
+}
+
 .titremention{
     font-family: 'Heaters';
     font-size: 50px;
@@ -568,6 +1058,18 @@ span{
 .paragraphementions{
     font-family: 'stewart_sansnormal';
     font-size: 20px;
+}
+
+@media (min-width:768px) and (max-width:1366px) {
+    .spanmentions{
+        font-size: 30px;
+    }
+    .detailsmentions{
+        font-size:30px;
+    }
+    .paragraphementions{
+        font-size: 30px !important;
+    }
 }
 
 @media screen and (max-width:414px) {
@@ -586,37 +1088,75 @@ span{
 /************************************** Footer ***********************************/
 /*********************************************************************************/
 
-.containerfoot{
+.containerfoot1{
     background-color: #DA291C;
-    height: 100px;
+    height: 82px;
     width: 100%;
-    -webkit-transform: rotate(1deg) skew(2deg, 2deg);
-    -moz-transform: rotate(1deg) skew(2deg, 2deg);
-    -o-transform: rotate(1deg) skew(2deg, 2deg);
-    -ms-transform: rotate(1deg) skew(2deg, 2deg);
-    transform: rotate(1deg) skew(2deg, 2deg);
-    margin-left: -5px;
-    margin-right: 5px;
-    
+    -webkit-transform: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+    transform: skewY(2deg);
 }
 
-.test{
+.containerfoot2{
     background-color: #DA291C;
     color: white;
     font-family: 'stewart_sansnormal';
     font-size: 25px;
     height: 100px;
     margin-top: -45px;
+    position: absolute;
 }
 
-.Mentionsfooter{
+.menu-menupiedpage-container{
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between !important;
+}
+/***** Multilingue *****/
+.menu-foot-menu-container{
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.menu-impressum-container{
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between !important;
+}
+/***** Fin Multilingue *****/
+
+.Mentionsfooter>a{
     text-decoration: none;
     color: white;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .Mentionsfooter:hover{
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width:320px) {
+	.containerfoot2{
+        font-size:23px;
+    }
+    .Mentionsfooter>a{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width:280px) {
+	.containerfoot2{
+        font-size:21px;
+    }
+    .Mentionsfooter>a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 /************************************ End Footer *********************************/

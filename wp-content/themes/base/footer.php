@@ -1,18 +1,21 @@
 			<footer id="footer">
-				<div class="container-fluid containerfoot mt-5">
-				</div>
-				<div class="container-fluid test">
+				<div class="container-fluid containerfoot1"></div>
+				<div class="container-fluid containerfoot2">
 					<div class="row h-100 align-items-end">
-						<div class="col-6">
-							<div class="">
-								<a href="http://localhost/ProjetStage/" class="Mentionsfooter">
-								Pix'ailes
-								</a>
-							</div>
-						</div>
-						<a href="http://localhost/ProjetStage/mentions-legales/" class="col-6 d-flex justify-content-end Mentionsfooter">
-							Mentions légales
-						</a>
+							<?php
+							wp_nav_menu( array(
+							'theme_location' => 'menufooter',
+							'menu_id' => '',
+							'echo' => true,
+							'before' => '',
+							'after' => '',
+							'link_before' => '',
+							'link_after' => '',
+							'depth' => 0,
+							'items_wrap' => '%3$s',
+							'walker' => '')
+							);
+							?>
 					</div>
 				</div>
 			</footer>

@@ -14,6 +14,7 @@
                     <p class="text-center paragraphecrea">'.$blockcreav[$i]["texte_crea_vis"].'</p></div></div>';
                     } 
                 ?>
+        <div class="row creamargin"></div>
     </div>
   
 <?php get_footer(); ?>

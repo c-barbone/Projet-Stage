@@ -6,7 +6,6 @@
             <div class="col-12 d-flex justify-content-center">
                 <h2 class="titrepsite">Site internet</h2>
             </div>
-            <div class="row align-items-center">
                 <div class="col-lg-4 col-sm-12 text-center colsite1">
                     <?php $lignechrono1 = get_field("ligne_chronologique1");
                         for ($i=0; $i < count($lignechrono1); $i++){
@@ -35,8 +34,8 @@
                     }
                     ?>
                 </div>
-            </div>
         </div>
+        <div class="row sitemargin"></div>
     </div>
 
 <?php get_footer(); ?>

@@ -35,13 +35,8 @@
 <body>
   <div class="container-fluid containerglobal">
     <div class="">
-      <nav class="navbar navbar-expand-lg d-flex justify-content-center">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="col-6">
+      <nav class="navbar navbar-expand-lg d-flex justify-content-center fixed-top">
+        <ul class="">
           <?php
               wp_nav_menu( array(
               'container' =>'nav',
@@ -58,10 +53,10 @@
               );
             ?>
         </ul>
-            <div class="col-1 d-flex justify-content-center">
+            <div class="d-flex justify-content-center">
               <a class="navbar-brand" href="#"><?= the_custom_logo(); ?></a>
             </div>
-        <ul class="col">
+        <ul class="d-flex justify-content-end">
           <?php
             wp_nav_menu( array(
             'container' =>'nav',
@@ -77,6 +72,7 @@
             'walker' => '')
             );
           ?>
+         
         </ul>
       </nav>
     </div>

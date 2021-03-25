@@ -51,3 +51,5 @@ function wpc_theme_support() {
 	));
 }
 add_action('after_setup_theme','wpc_theme_support');
+
+
