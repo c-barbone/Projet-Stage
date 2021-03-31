@@ -20,5 +20,7 @@
 				</div>
 			</footer>
 		</div>
+		<script src="<?= site_url()."/wp-content/themes/".get_template()."/script.js"; ?>">
+		<script type="text/javascript" src="/wp-content/themes/base/script.js"></script>
 	</body>
 </html>

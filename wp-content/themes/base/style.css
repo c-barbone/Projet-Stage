@@ -82,54 +82,128 @@ Theme Name: Template de base
 /*************************************** Navbar ************************************/
 /*********************************************************************************/
 
-.navbar {
+/************** WEB **************/
+  .navbar-web {
 	background-color: #DA291C;
-    height: 120px;
-	color: white;
+    width: 100%;
     font-family: 'stewart_sansnormal';
-    font-size: 30px;
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
-
-  li{
-    list-style-type: none;
-    display:inline;
-    
+  
+  .navbar-nav-web, li{
+      display: inline;
+      font-size: 25px;
   }
+  
+   .liheader>a{
+    color: white;
+    text-decoration: none;
+    padding: 0.9em;
+  }
+ 
   li>a:hover{
     color: #000000;
     text-decoration: none;
   }
 
-  nav.menu-menu-principal1-container>li>a{
-    color: white;
-  }
-  
-  nav.menu-menu-principal2-container>li>a{
-    width: 100% !important;
-    color: white;
-    margin-right: 30px;
+  a.custom-logo-link{
+      margin-right: 1rem;
   }
 
-  /***** Multilingue *****/
-  nav.menu-main-menuone-container>li>a{
-    color: white;
+  .mobile{
+      display: none;
   }
 
-  nav.menu-main-menutwo-container>li>a{
-    width: 100% !important;
-    color: white;
-    margin-right: 30px;
-  }
-  nav.menu-hauptmenu-eins-container>li>a{
-    color: white;
+/*************** MOBILE ***************/
+
+  @media screen and (max-width:1324px) {
+    .navbar-web{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+        background: #DA291C;
+        width: 100%;
+        height: 100px;
+        font-family: 'stewart_sansnormal';
+    }
+
+    .menu-mobile{
+        background: green;
+        width: 100vw;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: transform 0.9s ease-in-out;
+        top: 100%;
+        position: absolute;
+    }
+
+    .navbar-nav, li{
+        display: block;
+    }
+
+    .liheader>a{
+        line-height: 90px;
+        padding: 0;
+      }
+
+      .ulmenu{
+        padding: 0;
+      }
+
+	a.custom-logo-link{
+        margin-left: 30px;
+        height: 100%;
+        top: 18%;
+        align-items: center;
+        position: absolute;
+	    z-index: 1000;
+    }
+
+    
+    button.toggle-collapse{
+        cursor: pointer;
+        position: absolute;
+        left: 92%;
+        top: 29%;
+        position: absolute;
+	    z-index: 1000;
+        background: transparent;
+        border: none;
+        color: white;
+      } 
+      
+    button.toggle-collapse:focus{
+            outline-style: none;
+      } 
+}
+
+/******************** js menu a revoir ********************/
+.showNav {
+	/* show the menu */
+    transform: translateX(0);
+    transition: transform 0.9s ease-in-out;
   }
 
-  nav.menu-hauptmenu-zwei-container>li>a{
-    width: 100% !important;
-    color: white;
-    margin-right: 30px;
-  }
-/***** Fin Multilingue *****/
+/*
+@media screen and (max-width:767px) {
+    .navbar{
+        
+        }
+}
+
+@media screen and (max-width:320px) {
+    .liheader>a{
+        line-height: 70px;
+      }
+      .navbar-collapse{
+        margin-top: 22%;
+    }
+} */
+
+
 
 /************************************ End Navbar **********************************/
 /*---------------------------------------------------------------------------------------------------*/
@@ -188,11 +262,27 @@ Theme Name: Template de base
 .titreslider{
     font-family: 'Heaters';
     font-size: 70px;
+    margin-bottom: 100px;
 }
 
 .colslider{
-    height: 400px;
     margin-bottom: 200px;
+}
+
+a.carousel-control-next{
+    width: 40%;
+}
+a.carousel-control-prev{
+    width: 40%;
+}
+
+i.fas.fa-chevron-left{
+    color: #DA291C;
+    font-size: 50px;
+}
+i.fas.fa-chevron-right{
+    color: #DA291C;
+    font-size: 50px;
 }
 
 @media screen and (max-width:414px) {
@@ -1114,19 +1204,6 @@ span.wpcf7-not-valid-tip{
     display: flex;
     justify-content: space-between !important;
 }
-/***** Multilingue *****/
-.menu-foot-menu-container{
-    width: 100% !important;
-    display: flex;
-    justify-content: space-between !important;
-}
-
-.menu-impressum-container{
-    width: 100% !important;
-    display: flex;
-    justify-content: space-between !important;
-}
-/***** Fin Multilingue *****/
 
 .Mentionsfooter>a{
     text-decoration: none;
