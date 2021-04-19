@@ -57,7 +57,7 @@ $page_bg = ($page_bg == '' || $page_bg == 'transparent') ? 'transparent' : $page
 <?php do_action('rs_page_template_post_content'); ?>
 <?php wp_footer(); ?>
 <div class="container-fluid">
-	<div class="row">
+	<div class="row rowaccueil">
 		<?php $imgaccueil = get_field("img_accueil");
         echo'<img class="img-fluid imgaccueil" src="'.$imgaccueil.'"alt="">';
       ?>
@@ -92,18 +92,18 @@ $page_bg = ($page_bg == '' || $page_bg == 'transparent') ? 'transparent' : $page
 
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="<?=$slide[0]["img_slider"]?>" class="img-fluid w-50" alt="...">
+                <img src="<?=$slide[0]["img_slider"]?>" class="img-fluid imgslider" alt="...">
 				<div class="carousel-caption">
-				<a href="<?=$slide[0]["lien_slider"]?>"><?=$slide[0]["titre_slider"]?></a>
+				<a href="<?=$slide[0]["lien_slider"]?>" target="_blank"><?=$slide[0]["titre_slider"]?></a>
 				</div>
               </div>
               <?php
     
               for ($i=1; $i < count($slide); $i++){
                 echo '<div class="carousel-item">
-                <img src="'.$slide[$i]["img_slider"].'" class="img-fluid w-50" alt="...">
+                <img src="'.$slide[$i]["img_slider"].'" class="img-fluid imgslider" alt="...">
 				<div class="carousel-caption">
-				<a href="'.$slide[$i]["lien_slider"].'">'.$slide[$i]["titre_slider"].'</a>
+				<a href="'.$slide[$i]["lien_slider"].'" target="_blank">'.$slide[$i]["titre_slider"].'</a>
 				</div>
                 </div>';
               }
@@ -118,16 +118,6 @@ $page_bg = ($page_bg == '' || $page_bg == 'transparent') ? 'transparent' : $page
               }
               ?>
             </ol>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-					<i class="fas fa-chevron-left"></i>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-					<i class="fas fa-chevron-right"></i>
-						<span class="sr-only">Next</span>
-					</a>
-					
-					
           </div>
         </div>
 		</div>

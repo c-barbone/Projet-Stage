@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: Template de base
+Theme Name: base
 */
 
 /*************************************** Font ************************************/
@@ -24,15 +24,6 @@ Theme Name: Template de base
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Garland';
-    src: url('font/Garland.woff2') format('woff2'),
-        url('font/Garland.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 /************************************* End Font **********************************/
 /*---------------------------------------------------------------------------------------------------*/
 
@@ -48,6 +39,7 @@ Theme Name: Template de base
     font-size: 130px;
     margin-top: 100px;
     margin-bottom: 100px;
+    color: #141414;
 }
 
 @media screen and (max-width:667px) {
@@ -64,7 +56,7 @@ Theme Name: Template de base
 
 @media screen and (max-width:414px) {
 	.titrepage{
-		font-size: 60px;
+		font-size: 55px;
 	}
 }
 @media screen and (max-width:280px) {
@@ -77,8 +69,10 @@ Theme Name: Template de base
 
 /************************************ End Title *********************************/
 /*---------------------------------------------------------------------------------------------------*/
-
-
+/* slider revolution */
+rs-fullwidth-wrap#rev_slider_3_1_forcefullwidth{
+    margin-top: 60px;
+}
 /*************************************** Navbar ************************************/
 /*********************************************************************************/
 
@@ -86,14 +80,19 @@ Theme Name: Template de base
   .navbar-web {
 	background-color: #DA291C;
     width: 100%;
+    height: 120px;
     font-family: 'stewart_sansnormal';
     padding-top: 1%;
     padding-bottom: 1%;
   }
   
-  .navbar-nav-web, li{
+  .navbar-nav-web,li{
       display: inline;
       font-size: 25px;
+  }
+  
+  .navbar-nav-web,ul{
+      padding-left: 0;
   }
   
    .liheader>a{
@@ -107,6 +106,11 @@ Theme Name: Template de base
     text-decoration: none;
   }
 
+  img.custom-logo{
+      width: 100px;
+      height: auto;
+  }
+
   a.custom-logo-link{
       margin-right: 1rem;
   }
@@ -117,7 +121,7 @@ Theme Name: Template de base
 
 /*************** MOBILE ***************/
 
-  @media screen and (max-width:1324px) {
+  @media screen and (max-width:1337px) {
     .navbar-web{
         display: none;
     }
@@ -131,21 +135,25 @@ Theme Name: Template de base
     }
 
     .menu-mobile{
-        background: green;
+        background: #da291ce7;
         width: 100vw;
         height: 100vh;
         transform: translateX(-100%);
-        transition: transform 0.9s ease-in-out;
-        top: 100%;
+        transition: transform 0.5s ease-in-out;
+        top: 70%;
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
     }
 
     .navbar-nav, li{
         display: block;
+        font-size: 90px;
     }
 
     .liheader>a{
-        line-height: 90px;
+        line-height: 200px;
         padding: 0;
       }
 
@@ -161,13 +169,28 @@ Theme Name: Template de base
         position: absolute;
 	    z-index: 1000;
     }
-
     
+    img.custom-logo{
+     margin-top: -15px;
+     margin-left: -20px;
+    }
+
+    i.fas.fa-bars{
+        font-size: 30px;
+    }
+
+    /* JS menu burger */
+    .showNav {
+        /* show the menu */
+        transform: translateX(0);
+        transition: transform 0.5s ease-in-out;
+      }
+
     button.toggle-collapse{
         cursor: pointer;
         position: absolute;
         left: 92%;
-        top: 29%;
+        top: 35%;
         position: absolute;
 	    z-index: 1000;
         background: transparent;
@@ -180,28 +203,77 @@ Theme Name: Template de base
       } 
 }
 
-/******************** js menu a revoir ********************/
-.showNav {
-	/* show the menu */
-    transform: translateX(0);
-    transition: transform 0.9s ease-in-out;
-  }
+@media screen and (max-width:1024px){
+    .navbar-nav, li{
+        font-size: 55px;
+    }
 
-/*
-@media screen and (max-width:767px) {
-    .navbar{
-        
-        }
+    .liheader>a{
+        line-height: 155px;
+      }
 }
 
-@media screen and (max-width:320px) {
-    .liheader>a{
-        line-height: 70px;
-      }
-      .navbar-collapse{
-        margin-top: 22%;
+@media screen and (max-width:650px){
+    button.toggle-collapse{
+        left: 89%;
     }
-} */
+    .liheader>a{
+        line-height: 90px !important;
+      }
+      .navbar-nav, li{
+        font-size: 45px !important;
+    }
+}
+
+@media screen and (max-width:500px){
+    button.toggle-collapse{
+        left: 85%;
+    }
+}
+
+@media screen and (max-width:414px){
+    .navbar-nav, li{
+        font-size: 35px !important;
+    }
+}
+@media screen and (max-width:320px){
+    .navbar-nav, li{
+        font-size: 25px !important;
+    }
+    .liheader>a{
+        line-height: 75px !important;
+      }
+}
+
+@media screen and (max-height:768px){
+      .navbar-nav, li{
+          font-size: 25px;
+      }
+  
+      .liheader>a{
+          line-height: 110px;
+        }
+  }
+
+@media screen and (max-height:540px) {
+    .liheader>a{
+        line-height: 70px !important;
+      }
+      .navbar-nav, li{
+        font-size: 35px !important;
+    }
+} 
+@media screen and (max-height:414px) {
+    .ulmenu{
+        column-count: 2;
+    }
+    .liheader>a{
+        line-height: 50px !important;
+      }
+      .navbar-nav, li{
+        font-size: 25px !important;
+    }
+} 
 
 
 
@@ -211,6 +283,10 @@ Theme Name: Template de base
 
 /*************************************** Home ************************************/
 /*********************************************************************************/
+
+.rowaccueil{
+    margin-top: -3%;
+}
 
 .titreaccueil{
     font-family: 'Heaters';
@@ -269,25 +345,58 @@ Theme Name: Template de base
     margin-bottom: 200px;
 }
 
-a.carousel-control-next{
-    width: 40%;
-}
-a.carousel-control-prev{
-    width: 40%;
+.carousel-indicators{
+    position: relative;
 }
 
-i.fas.fa-chevron-left{
-    color: #DA291C;
-    font-size: 50px;
+.carousel-indicators li{
+    background-color: #141414;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
 }
-i.fas.fa-chevron-right{
+
+.carousel-caption{
+    margin: 0 4%;
+    background-color: #ffffff9a;
+}
+.carousel-caption>a{
     color: #DA291C;
-    font-size: 50px;
+    text-decoration: underline;
+    font-family: 'stewart_sansnormal';
+    font-size: 60px;
+}
+
+.carousel-caption>a:hover{
+    color: #141414;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1366px) {
+    .carousel-caption{
+        margin: 0 -15%;
+    }
+}
+@media screen and (max-width:823px) {
+    .carousel-caption>a{
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width:414px) {
 	.titreslider{
         font-size: 50px;
+    }
+    .carousel-caption>a{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:320px) {
+	.titreslider{
+        font-size: 30px;
+    }
+    .carousel-caption>a{
+        font-size: 20px;
     }
 }
 
@@ -1002,59 +1111,99 @@ span{
     position: absolute;
 }
 
-.test{
-    border: none;
-    border-bottom: 1px solid black;
-    font-family: 'stewart_sansnormal';
-    font-size: 30px;
-    color: #DA291C;
-    margin-bottom: 30px;
+.screen-reader-response{
+    display: none;
 }
 
-.test:focus{
+.message{
+    margin-bottom: 50px;
+}
+
+.wpcf7-response-output{
+    margin-bottom: 20%;
+    font-family: 'stewart_sansnormal';
+    font-size: 25px;
+    font-weight: bold;
+    color: #DA291C;
+}
+
+.wp-block-contact-form-7-contact-form-selector{
+    width: 100% !important;
+}
+
+.contactmargin{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, textarea.wpcf7-form-control.wpcf7-textarea{
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #141414;
+    font-family: 'stewart_sansnormal';
+    font-size: 30px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+textarea.wpcf7-form-control.wpcf7-textarea {
+    height: 300px;
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required::placeholder, textarea.wpcf7-form-control.wpcf7-textarea::placeholder{
+    color: #141414;
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required:focus, textarea.wpcf7-form-control.wpcf7-textarea:focus{
     outline-style: none;
+}
+
+.fichier{
+    margin-bottom: 50px;
 }
 
 input.wpcf7-form-control.wpcf7-file{
     outline-style: none;
 }
 
-.wpcf7{
-    width: 90%;
+input.wpcf7-form-control.wpcf7-submit{
+        font-family: 'stewart_sansnormal';
+        font-size: 25px !important;
+        margin-left: 20px;
+        margin-bottom: 40px;
+        margin-top: 50px;
+        background-color: #141414;
+        border: none;
+        font-size: 22px;
+        color: #ffffff;
+        padding: 8px 18px;
+        outline-style: none;
 }
 
-input.wpcf7-form-control.test{
-    width: 60%;
+input.wpcf7-form-control.wpcf7-submit:hover{
+    background-color: #DA291C;
+    transform: rotate(720deg);
+    transition: all 2s;
 }
 
-input.wpcf7-form-control.test::placeholder{
-    color: black;
+.fichier{
+    border: 1px dotted #141414;
+    padding: 20px;
 }
 
-textarea.wpcf7-form-control.wpcf7-textarea.test{
-    width: 60%;
-}
-textarea.wpcf7-form-control.wpcf7-textarea.test::placeholder{
-    color: black;
-}
-
-.fichiercontact{
-    border: 1px dotted black;
-    margin-bottom: 70px;
-    padding: 40px;
+@media screen and (max-width:1366px) {
+    span.wpcf7-not-valid-tip{
+        margin-top: 4% !important;
+        left: 17% !important;
+    }
 }
 
-span.wpcf7-not-valid-tip{
-    color: #DA291C;
-    position: absolute;
-}
-
-.wpcf7-response-output{
-    color: #DA291C;
-}
-
-.contactmargin{
-    margin-bottom: 200px;
+@media screen and (max-width:1024px) {
+    span.wpcf7-not-valid-tip{
+        margin-top: 5% !important;
+        left: 5% !important;
+    }
 }
 
 @media screen and (max-width:823px) {
@@ -1063,6 +1212,23 @@ span.wpcf7-not-valid-tip{
     }
     .textcontact{
         font-size: 20px;
+    }
+    input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, textarea.wpcf7-form-control.wpcf7-textarea{
+        font-size: 25px;
+    }
+    span.wpcf7-not-valid-tip{
+        margin-top: 10% !important;
+        left: 2% !important;
+    }
+    .fichier{
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    span.wpcf7-not-valid-tip{
+        margin-top: 7% !important;
+        left: 3% !important;
     }
 }
 
@@ -1079,11 +1245,12 @@ span.wpcf7-not-valid-tip{
     .rowcolor{
         height: 280px;
     }
-    .wpcf7{
-        width: 100%;
+    span.wpcf7-not-valid-tip{
+        margin-top: 10% !important;
+        left: 2% !important;
     }
-    input.wpcf7-form-control.test{
-        width: 90%;
+    input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, textarea.wpcf7-form-control.wpcf7-textarea{
+        font-size: 20px;
     }
 }
 
@@ -1091,7 +1258,12 @@ span.wpcf7-not-valid-tip{
 	.titrefooter{
         font-size: 37px;
     }
+    span.wpcf7-not-valid-tip{
+        margin-top: 11% !important;
+        left: 5% !important;
+    }
 }
+
 @media screen and (max-width:320px) {
 	.titrefooter{
         font-size: 28px;
@@ -1105,8 +1277,41 @@ span.wpcf7-not-valid-tip{
     .textcontact{
         font-size: 18px;
     }
+    input.wpcf7-form-control.wpcf7-file{
+        font-size: 13px;
+    }
 }
 
+@media screen and (max-width:280px) {
+    span.wpcf7-not-valid-tip{
+        margin-top: 14% !important;
+        left: 3% !important;
+    }
+    input.wpcf7-form-control.wpcf7-file{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-height:1024px) {
+	span.wpcf7-not-valid-tip{
+        margin-top: 4%;
+        left: 17%;
+    }
+}
+
+@media screen and (max-height:768px) {
+	span.wpcf7-not-valid-tip{
+        margin-top: 5%;
+        left: 5%;
+    }
+}
+
+@media screen and (max-height:411px) {
+	span.wpcf7-not-valid-tip{
+        margin-top: 7% !important;
+        left: 3% !important;
+    }
+}
 
 /********************************** End Page contact ********************************/
 /*---------------------------------------------------------------------------------------------------*/
@@ -1208,6 +1413,7 @@ span.wpcf7-not-valid-tip{
 .Mentionsfooter>a{
     text-decoration: none;
     color: white;
+    font-size: 40px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -1215,6 +1421,12 @@ span.wpcf7-not-valid-tip{
 .Mentionsfooter:hover{
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width:640px) {
+    .Mentionsfooter>a{
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width:320px) {
@@ -1226,11 +1438,13 @@ span.wpcf7-not-valid-tip{
         margin-right: 15px;
     }
 }
+
 @media screen and (max-width:280px) {
 	.containerfoot2{
         font-size:21px;
     }
     .Mentionsfooter>a{
+        font-size: 22px;
         margin-left: 10px;
         margin-right: 10px;
     }

@@ -5,10 +5,16 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content=" Bienvenue dans notre Agence web éco fiendly">
-
   <!-- Title and slogan display -->
   <title><?= bloginfo('name');?> - <?= bloginfo('description')?></title>
+  <meta name="description" content=" Bienvenue chez Pix'ailes, l'agence web suisse qui fait décoller 
+  vos projets!">
+  <meta name="keywords" content="création de site internet, hébergement, logos, flyers, catalogues, 
+  cartes de visite, menu de restaurant, hébergement, traduction.">
+  <meta name="author" content="Camille Barbone">
+  <meta name="copyright" content="Camille Barbone">
+  <meta name="robots" content="index, follow">
+
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -72,46 +78,46 @@
             </ul>
       </nav>
      
-      <div class="mobile fixed-top">
+      <div class="mobile text-uppercase fixed-top">
         <a href="#" class="navbar-brand"><?= the_custom_logo(); ?></a> 
           <button class="toggle-collapse">
            <i class="fas fa-bars"></i>
           </button>
           <nav class="menu-mobile text-center">
-        <ul class="ulmenu">
-        <?php
-                    wp_nav_menu( array(
-                    'container' =>'false',
-                    'theme_location' => 'menuheader1',
-                    'menu_id' => '',
-                    'echo' => true,
-                    'before' => '',
-                    'after' => '',
-                    'link_before' => '',
-                    'link_after' => '',
-                    'depth' => 0,
-                    'items_wrap' => '%3$s',
-                    'walker' => '')
-                    );
-                  ?>
-                  
-                <?php
-                  wp_nav_menu( array(
-                  'container' =>'false',
-                  'theme_location' => 'menuheader2',
-                  'menu_id' => '',
-                  'echo' => true,
-                  'before' => '',
-                  'after' => '',
-                  'link_before' => '',
-                  'link_after' => '',
-                  'depth' => 0,
-                  'items_wrap' => '%3$s',
-                  'walker' => '')
-                  );
-                ?>
-        </ul>
-      </nav>
+            <ul class="ulmenu">
+              <?php
+                        wp_nav_menu( array(
+                        'container' =>'false',
+                        'theme_location' => 'menuheader1',
+                        'menu_id' => '',
+                        'echo' => true,
+                        'before' => '',
+                        'after' => '',
+                        'link_before' => '',
+                        'link_after' => '',
+                        'depth' => 0,
+                        'items_wrap' => '%3$s',
+                        'walker' => '')
+                        );
+                      ?>
+                      
+                    <?php
+                      wp_nav_menu( array(
+                      'container' =>'false',
+                      'theme_location' => 'menuheader2',
+                      'menu_id' => '',
+                      'echo' => true,
+                      'before' => '',
+                      'after' => '',
+                      'link_before' => '',
+                      'link_after' => '',
+                      'depth' => 0,
+                      'items_wrap' => '%3$s',
+                      'walker' => '')
+                      );
+                    ?>
+            </ul>
+          </nav>
           
       </div>
      
